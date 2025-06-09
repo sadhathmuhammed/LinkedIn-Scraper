@@ -1,0 +1,7 @@
+fastapi
+selenium
+requests
+pytest
+pytest-asyncio
+httpx
+requests-mock
