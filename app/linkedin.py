@@ -24,9 +24,7 @@ class LinkedInScraper:
         Initialize the Chrome driver used for web scraping. The driver will be run in
         headless mode, and a flag will be set to disable the "Automation controlled"
         feature that LinkedIn uses to detect bots. This flag is necessary to prevent
-        LinkedIn from presenting a CAPTCHA when logging in. The driver will be
-        configured to run in headless mode, which means that it will not display a
-        visible browser window.
+        LinkedIn from presenting a CAPTCHA when logging in.
         """
         options = Options()
         options.add_argument("--headless=new")
