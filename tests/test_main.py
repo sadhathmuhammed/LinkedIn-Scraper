@@ -51,6 +51,7 @@ class TestMain(unittest.TestCase):
         proper authentication returns a 200 OK status code and a JSON response
         with a 'connections' key that contains a list of connections.
         """
+        response = self.client.get("/connections?start=0&count=1", auth=self.auth)
         self.assertEqual(response.status_code, 200)
         data = response.json()
         self.assertIsInstance(data, dict)
